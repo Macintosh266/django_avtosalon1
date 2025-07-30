@@ -57,7 +57,6 @@ class CarForm(forms.ModelForm):
     class Meta:
         model=Car
         fields='__all__'
-        # fields=['model','price','year','color',]
         widgets={
             'salon_id':forms.Select(attrs={"class": "form-control"}),
             'brand_id':forms.Select(attrs={"class": "form-control"}),
